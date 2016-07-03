@@ -97,14 +97,15 @@ var updateNames = function () {
 
   $player1TitleAction.html(player1NameFromInput + "'s" + " icons: ");
   $player2TitleAction.html(player2NameFromInput + "'s" + " icons: ");
-  thePlayer1Wins = 0;
-  thePlayer2Wins = 0;
+
 };
 
 // Push the the updated names to the database:
 
 $letsPlayButtonAction.on("click",function () {
   updateNames();
+  thePlayer1Wins = 0;
+  thePlayer2Wins = 0;
   playerNamesData.push({ player1:player1NameFromInput, player2:player2NameFromInput});
 });
 
