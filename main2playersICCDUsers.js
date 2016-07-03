@@ -97,6 +97,8 @@ var updateNames = function () {
 
   $player1TitleAction.html(player1NameFromInput + "'s" + " icons: ");
   $player2TitleAction.html(player2NameFromInput + "'s" + " icons: ");
+  thePlayer1Wins = 0;
+  thePlayer2Wins = 0;
 };
 
 // Push the the updated names to the database:
